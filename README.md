@@ -50,5 +50,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 📧 Email: alishadan84@gmail.com
 
 💼 LinkedIn: ali-shadan-48359152/
-
-=======
