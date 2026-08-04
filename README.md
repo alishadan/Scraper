@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 SCRAPER
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue)](version)
@@ -53,11 +52,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 💼 LinkedIn: ali-shadan-48359152/
 
 =======
-
-=======
-open input.json file and set site names and calss tags. the scraper scrape the site and save data in data/data.json
-clear data folder or data/cash folder for new scrape
-
-Run
-`make run`
->>>>>>> 7522c64d75ec5edefa75e2c4e1bafc0637b3901f
