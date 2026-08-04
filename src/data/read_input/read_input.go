@@ -1,37 +1,35 @@
-// scraper/src/data/read_input/read_input.go
 package read_input
 
 import (
 	"encoding/json"
-	"fmt"
 	"os"
 	"scraper/src/core/text_type"
 )
 
 // Export the function (capitalize first letter)
-func ReadInputFile() (text_type.InputData, bool) {
+func ReadInputFile() (text_type.InputData, int) {
 	var inputData text_type.InputData
 	inputPath := "input.json"
 
 	// Check if file exists
 	_, err := os.Stat(inputPath)
 	if os.IsNotExist(err) {
-		fmt.Printf("Error: input file '%s' does not exist\n", inputPath)
-		return inputData, false
+		// input file is not exist
+		return inputData, 1
 	}
 
 	// Read the file (using os.ReadFile - modern approach)
 	bytes, err := os.ReadFile(inputPath)
 	if err != nil {
-		fmt.Printf("Error reading input file: %v\n", err)
-		return inputData, false
+		//Error reading input file
+		return inputData, 2
 	}
 
 	// Unmarshal JSON into struct
 	if err := json.Unmarshal(bytes, &inputData); err != nil {
-		fmt.Printf("Error parsing JSON: %v\n", err)
-		return inputData, false
+		//Error parsing JSON
+		return inputData, 3
 	}
 
-	return inputData, true
+	return inputData, 0
 }

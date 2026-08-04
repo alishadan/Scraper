@@ -10,13 +10,18 @@ import (
 )
 
 func main() {
-	site, success := read_input.ReadInputFile() // Make sure function is exported
-	if !success {
+	fmt.Printf("start app \n")
+
+	//step 1: read input file
+	site, success := read_input.ReadInputFile()
+	if success != 0 {
 		fmt.Println("Failed to read input file")
 		return
 	}
 
 	fmt.Println("START SCRAPING")
+
+	//step 2:
 	articles := get_text.Scrape(site.URL, site.Tags)
 	path := "data"
 	filename := "data/data.json"
@@ -26,7 +31,8 @@ func main() {
 		return
 	}
 	result := save_text.Save_text(filename, articles)
-	if result {
+	println(result)
+	if result == 0 {
 		fmt.Println("Data saved as JSON successfully!")
 		return
 	} else {

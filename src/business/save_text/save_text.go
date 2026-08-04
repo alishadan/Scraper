@@ -5,7 +5,7 @@ import (
 	"scraper/src/data/save_string"
 )
 
-func Save_text(filename string, data [][3]string) bool {
+func Save_text(filename string, data [][3]string) int {
 	var articles []text_type.Article
 	for index := range data {
 		article := text_type.Article{
