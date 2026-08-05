@@ -1,9 +1,9 @@
-SCRAPER
+Link_Scraper
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue)](version)
 [![License](https://img.shields.io/badge/license-MIT-green)](license)
 
-SCRAPER is a mini app scrape a site and save title, URL and image a json file
+Link_Scraper is a mini app scrape a webpage and save title, URL and image URL in a json file.
 
 ---
 
