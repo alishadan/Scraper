@@ -41,7 +41,7 @@ v1.0.0 (2026-07-06)
 
 🎉 Initial release
 
-Basic functionality implemented
+Scrape links from a webpage
 
 ### 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.

@@ -22,7 +22,7 @@ func main() {
 	fmt.Println("START SCRAPING")
 
 	//step 2:
-	articles := get_text.Scrape(site.URL, site.Tags)
+	articles := get_text.Scrape(site.URL, site.Tags) // [][3]string
 	path := "data"
 	filename := "data/data.json"
 	check_requirements.Check_file(path, filename)
