@@ -31,7 +31,6 @@ func main() {
 		return
 	}
 	result := save_text.Save_text(filename, articles)
-	println(result)
 	if result == 0 {
 		fmt.Println("Data saved as JSON successfully!")
 		return
