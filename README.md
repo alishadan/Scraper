@@ -24,15 +24,18 @@ Link_Scraper is a mini app scrape a webpage and save title, URL and image URL in
 
 ```bash
 # Clone the repository
-git https://github.com/alishadan/Scraper.git
+git https://github.com/alishadan/link_Scraper.git
 # Navigate to the project directory
-cd Scraper
+cd link_Scraper
 
 # Run make
 make
 
-# Run the program
-./build/app
+#copy input.json in bin folder
+
+#run program
+make run
+
 ```
 ---
 ### 📝 Changelog

@@ -1,5 +1,5 @@
 # Go parameters
-APP_NAME := scraper
+APP_NAME := Link_Scraper
 MAIN_FILE := main.go
 BUILD_DIR := bin
 GO := go
