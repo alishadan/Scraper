@@ -9,12 +9,11 @@ Link_Scraper is a mini app scrape a webpage and save title, URL and image URL in
 
 ## ✨ Features
 
-- 🚀 **Layerd articture**
+- 🚀 **Layerd Articture**
 - ⚡ **Simple** - simple to learn and use
 
 ---
 
-## 📦 Installation
 
 ### Prerequisites
 - a go ompiler
